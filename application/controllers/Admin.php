@@ -43,17 +43,8 @@ function cek_login(){
     $this->session->set_userdata('isLogin', TRUE);
     $this->session->set_userdata('username',$username);    
     $this->session->set_userdata('id_pengguna', $id_pengguna);
-    if ($data->level == 1) {
-      $this->session->set_userdata('level','1');
+   
       redirect('dashboard');
-    }elseif($data->level == 2){
-        $this->session->set_userdata('level','2');
-      redirect('dashboard');
-    }
-    elseif($data->level == 3){
-        $this->session->set_userdata('level','3');
-      redirect('dashboard');
-    }
   }else{
      echo " <script>
      alert('Login Gagal: Cek Kembali username dan password yang anda masukkan . . ');

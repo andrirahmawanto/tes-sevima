@@ -4,7 +4,6 @@
 		<!--- Sidemenu -->
 		<div id="sidebar-menu">
 			<ul>
-				<?php if ($this->session->userdata('level')=='1') { ?>
 					<li>
 						<a href="<?php echo base_url() ?>dashboard" class="waves-effect"><i class="mdi mdi-home"></i> <span> Home </span></a>
 					</li>
@@ -29,9 +28,6 @@
 					<li>
 						<a href="<?php echo base_url() ?>" class="waves-effect"><i class="mdi mdi-account-circle"></i> <span> Profile </span></a>
 					</li>
-					
-					
-				<?php } ?>
 			</ul>
 		</div>
 		<!-- Sidebar -->

@@ -23,7 +23,7 @@
 						<a href="<?php echo base_url() ?>" class="waves-effect"><i class="mdi mdi-heart"></i> <span> Notifications </span></a>
 					</li>
 					<li>
-						<a href="<?php echo base_url() ?>" class="waves-effect"><i class="mdi mdi-plus-circle-outline"></i> <span> Create </span></a>
+						<a href="<?php echo base_url() ?>post" class="waves-effect"><i class="mdi mdi-plus-circle-outline"></i> <span> Create </span></a>
 					</li>
 					<li>
 						<a href="<?php echo base_url() ?>" class="waves-effect"><i class="mdi mdi-account-circle"></i> <span> Profile </span></a>

@@ -18,29 +18,27 @@
                       <div class="col-sm-8">
                         <div class="p-20">
 
-                          <!-- Image Post -->
-                          <div class="blog-post m-b-30">
-                            <div class="m-b-10">
-                              <img src="<?php echo base_url() ?>assets/images/users/user-2.png" alt="user-img" class="img-circle user-img" height="35">
-                              <span style="font-weight: bold; margin-left: 10px;"> Andri Rahmawanto</span>
+
+                          <form method="post" action="<?php echo site_url('post/input_post'); ?>" enctype='multipart/form-data'>
+                            <div class="demo-box m-t-20">
+                              
+                              <div class="col-lg-4" style="margin-top: 10px">
+                                <span>Captions</span>
+                              </div>
+                              <div class="col-lg-8" style="margin-bottom: 10px">
+                                <textarea class="form-control" id="isi" name="isi" rows="5" cols="50" placeholder="Masukkan Captions"></textarea>
+                              </div>
+                              <div class="col-lg-4" style="margin-top: 10px">
+                                <span>Photo</span>
+                              </div>
+                              <div class="col-lg-8" style="margin-bottom: 10px">
+                                <input type="file" class="form-control" id="userfile" name="userfile" accept="image/*">
+                              </div>
+                              <div class="col-lg-12" style="margin-bottom: 10px" align="right">
+                                <button type="submit" id="btnsimpan" name="btnsimpan" class="btn btn-primary">Save</button>
+                              </div>
                             </div>
-                            <div class="post-image">
-                              <img src="<?php echo base_url() ?>assets/images/post.png" alt="" class="img-responsive">
-                            </div>
-                            <div>
-                              <img src="<?php echo base_url() ?>assets/images/heart.svg" height="35">
-                              <img src="<?php echo base_url() ?>assets/images/comment.svg" height="35">
-                              <img src="<?php echo base_url() ?>assets/images/share.svg" height="35">
-                            </div>
-                            <span>2.023 likes</span>
-                            <div class="post-title">
-                              <a href="javascript:void(0);">Andri Rahmawanto</a>
-                            </div>
-                            <div>
-                              <p>Dirgahayu Republik Indonesia yang ke 77
-                                #merdeka #dirgahayuindonesia</p>
-                            </div>
-                          </div>
+                          </form>
                         </div>
                       </div> <!-- end col -->
 

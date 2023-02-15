@@ -1,0 +1,6 @@
+[06-Feb-2021 19:55:46 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Penjualan::bulan() in /home/ansiftec/dashboard.ansiftech.com/application/controllers/Penjualan.php on line 47
+[20-Feb-2021 16:56:04 Asia/Jakarta] PHP Fatal error:  Cannot redeclare M_dashboard::tot_pengguna() in /home/ansiftec/dashboard.ansiftech.com/application/models/M_dashboard.php on line 17
+[02-Mar-2021 08:36:47 Asia/Jakarta] PHP Fatal error:  Cannot redeclare M_penjualan::getrekap() in /home/ansiftec/dashboard.ansiftech.com/application/models/M_penjualan.php on line 161
+[02-Mar-2021 14:04:47 Asia/Jakarta] PHP Fatal error:  Cannot redeclare M_penjualan::getminggu() in /home/ansiftec/dashboard.ansiftech.com/application/models/M_penjualan.php on line 97
+[03-Mar-2021 08:14:33 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Penjualan::tahun() in /home/ansiftec/dashboard.ansiftech.com/application/controllers/Penjualan.php on line 98
+[26-Oct-2022 09:27:25 Asia/Jakarta] PHP Fatal error:  Cannot use empty array elements in arrays in /home/ansifte1/jtv.ansiftech.web.id/application/models/M_video.php on line 6

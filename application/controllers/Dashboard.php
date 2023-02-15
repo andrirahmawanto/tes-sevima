@@ -13,9 +13,10 @@ class Dashboard extends CI_Controller {
         }
     }    
     public function index(){
+        $x['post'] 		= $this->M_dashboard->getData();	
         $this->load->view('layouts/header');
         $this->load->view('layouts/sidebar');
-        $this->load->view('v_dashboard');
+        $this->load->view('v_dashboard', $x);
         $this->load->view('layouts/footer');
     }
 

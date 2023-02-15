@@ -17,30 +17,30 @@
                     <div class="row">
                       <div class="col-sm-8">
                         <div class="p-20">
-
+                          <?php foreach ($post as $rowdata) {?>
                           <!-- Image Post -->
                           <div class="blog-post m-b-30">
                             <div class="m-b-10">
                               <img src="<?php echo base_url() ?>assets/images/users/user-2.png" alt="user-img" class="img-circle user-img" height="35">
-                              <span style="font-weight: bold; margin-left: 10px;"> Andri Rahmawanto</span>
+                              <span style="font-weight: bold; margin-left: 10px;"> <?= $rowdata->nama_pengguna ?></span>
                             </div>
                             <div class="post-image">
-                              <img src="<?php echo base_url() ?>assets/images/post.png" alt="" class="img-responsive">
+                              <img src="<?php echo base_url() ?>assets/upload_foto/<?= $rowdata->foto; ?>" alt="" class="img-responsive">
                             </div>
                             <div>
                               <img src="<?php echo base_url() ?>assets/images/heart.svg" height="35">
                               <img src="<?php echo base_url() ?>assets/images/comment.svg" height="35">
                               <img src="<?php echo base_url() ?>assets/images/share.svg" height="35">
                             </div>
-                            <span>2.023 likes</span>
+                            <span><?= $rowdata->like ?> likes</span>
                             <div class="post-title">
-                              <a href="javascript:void(0);">Andri Rahmawanto</a>
+                              <a href="javascript:void(0);"><?= $rowdata->nama_pengguna ?></a>
                             </div>
                             <div>
-                              <p>Dirgahayu Republik Indonesia yang ke 77
-                                #merdeka #dirgahayuindonesia</p>
+                              <p><?= $rowdata->isi ?></p>
                             </div>
                           </div>
+                          <?php } ?>
                         </div>
                       </div> <!-- end col -->
 

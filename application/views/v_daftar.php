@@ -27,7 +27,7 @@
           <div align="center" class="mb-3">
             <img src="<?php echo base_url() ?>assets/images/logo-ig.png" alt="" width="50%">
           </div>            
-          <form class="form-box px-3" action="<?php echo base_url().'admin/cek_login'?>" method="post" role="form">
+          <form class="form-box px-3" action="<?php echo site_url('daftar/input');?>" enctype='multipart/form-data' method="post">
             <div class="form-input">
               <span><i class="fa fa-envelope-o"></i></span>
               <input type="email" name="email" placeholder="Email" tabindex="10" required>
@@ -45,10 +45,11 @@
               <input type="password" name="password" placeholder="Password" required>
             </div>
             <div class="mb-3">
-              <button type="submit" class="btn btn-block text-uppercase" style="background-color: #15569E;">
+              <button type="submit" id="btnsimpan" name="btnsimpan" class="btn btn-block text-uppercase" style="background-color: #15569E;">
                 Sign Up
               </button>
-            </div>
+            </div>            
+          </form>
             <div class="col-md-12" align="center">
               <span>Have an account? <a href="<?php echo base_url().'admin'?>"> Log in</a></span>
             </div>
@@ -58,7 +59,6 @@
             <div class="text-center mb-2">
               <strong> &copy; 2023 Andri Rahmawanto, All Rights Reserved </strong>
             </div>
-          </form>
         </div>
       </div>
     </div>

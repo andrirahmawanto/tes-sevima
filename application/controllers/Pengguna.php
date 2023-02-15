@@ -23,24 +23,23 @@ class Pengguna extends CI_Controller {
 	function input(){
 		if(isset($_POST['btnsimpan']))
 		{
-			$this->load->library('upload');
 			$username       = $this->input->post('username'); 
-			$nama_pengguna  = $this->input->post('nama_pengguna'); 
-			$level         	= $this->input->post('level'); 
+			$nama_pengguna  = $this->input->post('full_name'); 
+			$email         	= $this->input->post('email'); 
 			$password       = md5($this->input->post('password')); 
 
 			$data = array(
 				'username'          => $username,
 				'nama_pengguna'     => $nama_pengguna,
 				'password'          => $password,
-				'level'  		    => $level
+				'email'  		    => $email
 			);
 
 			$this->M_pengguna->insert($data);
-			redirect(site_url('pengguna'));
+			// redirect(site_url('pengguna'));
 		}
 		else {
-			redirect(site_url('pengguna'));
+			// redirect(site_url('pengguna'));
 
 		}
 	}

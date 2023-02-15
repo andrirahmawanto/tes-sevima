@@ -12,13 +12,6 @@ class M_pengguna extends CI_Model
    $query = $this->db->get();
    return $query->result();
  } 
- function calon_pengguna(){
-   $this->db->select('*');
-   $this->db->from('tb_pengguna');
-   $this->db->where('level','3');
-   $query = $this->db->get();
-   return $query->result();
- } 
  function insert($data){
   $this->db->insert('tb_pengguna',$data);
 }
